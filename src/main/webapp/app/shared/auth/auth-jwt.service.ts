@@ -18,7 +18,7 @@ export class AuthServerProvider {
             password: credentials.password,
             rememberMe: credentials.rememberMe
         };
-        return this.http.post(SERVER_API_URL + 'whaleuaa/auth/login', data, {});
+        return this.http.post(SERVER_API_URL + 'auth/login', data, {});
     }
 
     loginWithToken(jwt, rememberMe) {
@@ -34,6 +34,6 @@ export class AuthServerProvider {
     }
 
     logout(): Observable<any> {
-        return this.http.post(SERVER_API_URL + 'whaleuaa/auth/logout', null);
+        return this.http.post(SERVER_API_URL + 'auth/logout', null);
     }
 }

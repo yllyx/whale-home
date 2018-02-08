@@ -11,7 +11,8 @@
     "nativeLanguage": "zh-cn",
     "languages": [
       "zh-cn",
-      "zh-tw"
+      "zh-tw",
+      "en"
     ],
     "clientPackageManager": "yarn"
   }
